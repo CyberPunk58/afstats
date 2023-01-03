@@ -5,7 +5,7 @@ from .forms import TeamForm
 # Create your views here.
 
 def teams(request):
-    pass
+    return render(request, 'teams/teams.html')
 
 def team_add(request):
     error = ""
