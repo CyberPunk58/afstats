@@ -7,3 +7,6 @@ class Team(models.Model):
     color = models.CharField(max_length=30)
     reserve_color = models.CharField(max_length=30)
     url = models.URLField(blank=True)
+
+class Match(models.Model):
+    team_1 = models.ForeignKey(Team, on_delete = models.PROTECT)
