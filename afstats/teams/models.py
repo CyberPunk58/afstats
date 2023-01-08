@@ -7,3 +7,4 @@ class Team(models.Model):
     color = models.CharField(max_length=30)
     reserve_color = models.CharField(max_length=30)
     url = models.URLField(blank=True)
+
